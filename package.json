@@ -1,0 +1,14 @@
+{
+  "name": "yomou-syosetu-darkmode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial dark mode Chrome extension for yomou.syosetu.com and ncode.syosetu.com",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test tests/settings.test.cjs tests/content.test.cjs tests/package.test.mjs",
+    "check": "node scripts/check.mjs",
+    "package": "node scripts/package.mjs"
+  }
+}

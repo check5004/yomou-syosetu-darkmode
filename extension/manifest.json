@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "読もう、夜。 — 小説を読もう！ダークモード",
+  "short_name": "読もう、夜。",
+  "version": "1.0.0",
+  "description": "小説を読もう！のランキング・検索、小説家になろうの目次・本文を、読みやすいダークモードに。非公式の拡張機能です。",
+  "minimum_chrome_version": "109",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/app-icon-16.png",
+    "32": "icons/app-icon-32.png",
+    "48": "icons/app-icon-48.png",
+    "128": "icons/app-icon-128.png"
+  },
+  "action": {
+    "default_title": "読もう、夜。",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/app-icon-16.png",
+      "32": "icons/app-icon-32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://yomou.syosetu.com/*", "*://ncode.syosetu.com/*"],
+      "css": ["theme.css"],
+      "js": ["settings.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>読もう、夜。設定</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="settings.js" defer></script>
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="brand-icon" aria-hidden="true">
+          <img src="icons/app-icon-128.png" width="41" height="41" alt="">
+        </div>
+        <div>
+          <h1>読もう、夜。</h1>
+          <p class="tagline">物語に、落ち着いた灯りを。</p>
+        </div>
+        <span class="edition">非公式</span>
+      </header>
+
+      <form id="settings-form">
+        <fieldset id="settings-controls" disabled>
+          <legend class="sr-only">表示設定</legend>
+          <fieldset class="setting-section">
+            <legend class="section-title">表示モード</legend>
+            <div class="segmented mode-options">
+              <label><input type="radio" name="mode" value="dark" checked><span>ダーク</span></label>
+              <label><input type="radio" name="mode" value="light"><span>オフ</span></label>
+              <label><input type="radio" name="mode" value="system"><span>端末に合わせる</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="setting-section palette-section">
+            <legend class="section-title">夜の色</legend>
+            <div class="palette-options">
+              <label class="palette-choice"><input type="radio" name="palette" value="night" checked><span><i class="swatch swatch-night" aria-hidden="true"></i>夜</span></label>
+              <label class="palette-choice"><input type="radio" name="palette" value="ink"><span><i class="swatch swatch-ink" aria-hidden="true"></i>漆黒</span></label>
+              <label class="palette-choice"><input type="radio" name="palette" value="warm"><span><i class="swatch swatch-warm" aria-hidden="true"></i>暖色</span></label>
+            </div>
+          </fieldset>
+
+          <section class="reader-section" aria-labelledby="reader-heading">
+            <label class="reader-toggle" for="custom-reader">
+              <span><span id="reader-heading" class="section-title">本文の読みやすさ</span><span class="setting-description">文字サイズと行間を調整</span></span>
+              <input id="custom-reader" name="customReader" type="checkbox" role="switch">
+            </label>
+            <fieldset id="reader-controls" class="reader-controls" disabled>
+              <legend class="sr-only">本文の文字設定</legend>
+              <div class="range-setting">
+                <div class="range-caption"><label for="font-size">文字サイズ</label><output id="font-size-output" for="font-size">18 px</output></div>
+                <input id="font-size" name="fontSize" type="range" min="14" max="28" step="1" value="18" aria-describedby="font-size-output">
+              </div>
+              <div class="range-setting">
+                <div class="range-caption"><label for="line-height">行間</label><output id="line-height-output" for="line-height">2.0 倍</output></div>
+                <input id="line-height" name="lineHeight" type="range" min="1.6" max="2.8" step="0.1" value="2" aria-describedby="line-height-output">
+              </div>
+            </fieldset>
+          </section>
+
+          <section id="preview" class="preview" data-palette="night" data-mode="dark" aria-labelledby="preview-heading">
+            <div class="preview-topline"><h2 id="preview-heading">プレビュー</h2><span aria-hidden="true">—— 夜の一頁</span></div>
+            <p id="preview-text" tabindex="0">窓の向こうで、星がひとつ瞬いた。<br>物語の続きは、まだ誰も知らない。</p>
+          </section>
+        </fieldset>
+      </form>
+
+      <footer>
+        <p id="save-status" class="save-status" role="status" aria-live="polite" aria-atomic="true">設定を読み込み中…</p>
+        <nav class="site-links" aria-label="小説を読もう！を開く">
+          <a href="https://yomou.syosetu.com/rank/top/" target="_blank" rel="noopener noreferrer">ランキング <span aria-hidden="true">↗</span></a>
+          <a href="https://yomou.syosetu.com/search.php" target="_blank" rel="noopener noreferrer">小説を探す <span aria-hidden="true">↗</span></a>
+        </nav>
+        <p class="privacy-note">設定はこの端末に保存されます。<br>「小説を読もう！」公式の拡張機能ではありません。</p>
+      </footer>
+    </main>
+  </body>
+</html>

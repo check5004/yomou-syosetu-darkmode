@@ -1,0 +1,489 @@
+/*
+ * Yomou Night: color overrides for the site's existing layout.
+ * Every rule is opt-in. Disabling the extension restores the site's own styles.
+ * No image inversion, hidden content, layout replacement, or external resources.
+ */
+html[data-yomou-dark="on"] {
+  --yd-bg: #111722;
+  --yd-surface: #1a2230;
+  --yd-raised: #232e3e;
+  --yd-hover: #2b394c;
+  --yd-text: #dce3ed;
+  --yd-muted: #a2afc2;
+  --yd-link: #a7c9f5;
+  --yd-visited: #c4acdd;
+  --yd-link-hover: #d2e5ff;
+  --yd-accent: #e6b66d;
+  --yd-accent-text: #211b13;
+  --yd-border: #3b485a;
+  --yd-danger: #ffaaa3;
+  --yd-success: #a7d5b2;
+  --yd-selection: #405773;
+  --yd-gold: #e6bf68;
+  --yd-silver: #c3cddc;
+  --yd-bronze: #dbac85;
+  color-scheme: dark !important;
+  color: var(--yd-text) !important;
+  background-color: var(--yd-bg) !important;
+  scrollbar-color: var(--yd-border) var(--yd-bg);
+}
+
+html[data-yomou-dark="on"][data-yomou-palette="ink"] {
+  --yd-bg: #0b0d10;
+  --yd-surface: #15181c;
+  --yd-raised: #20252b;
+  --yd-hover: #30363e;
+  --yd-text: #dce0e5;
+  --yd-muted: #a8b0ba;
+  --yd-link: #afc9e9;
+  --yd-visited: #c0aed2;
+  --yd-link-hover: #e0ecfc;
+  --yd-accent: #c6cdd5;
+  --yd-accent-text: #14171b;
+  --yd-border: #414750;
+  --yd-selection: #424b5a;
+}
+
+html[data-yomou-dark="on"][data-yomou-palette="warm"] {
+  --yd-bg: #1d1915;
+  --yd-surface: #28221c;
+  --yd-raised: #332c24;
+  --yd-hover: #44392e;
+  --yd-text: #e6dccd;
+  --yd-muted: #bcae9c;
+  --yd-link: #e8bc83;
+  --yd-visited: #cdafce;
+  --yd-link-hover: #ffdeb1;
+  --yd-accent: #dfbc86;
+  --yd-accent-text: #251b10;
+  --yd-border: #554737;
+  --yd-danger: #efa59a;
+  --yd-success: #bdce9e;
+  --yd-selection: #675038;
+}
+
+/* Bridge the site's semantic variables to our palette. The novel reader puts
+ * its custom color variables on body, so those aliases must be overridden there
+ * as well. Keeping this bridge lets newly inserted site components inherit it. */
+html[data-yomou-dark="on"],
+html[data-yomou-dark="on"] body {
+  --color-site: var(--yd-raised) !important;
+  --color-site-base: var(--yd-bg) !important;
+  --color-site-base--series: var(--yd-bg) !important;
+  --color-site-text: var(--yd-text) !important;
+  --color-site-text-headline: var(--yd-text) !important;
+  --color-site-link: var(--yd-link) !important;
+  --color-site-link--visited: var(--yd-visited) !important;
+  --color-site-link--hover: var(--yd-link-hover) !important;
+  --color-site-dark-base: var(--yd-surface) !important;
+  --color-site-dark-text: var(--yd-text) !important;
+  --color-site-dark-headline: var(--yd-text) !important;
+  --color-site-ui-lightbase: var(--yd-surface) !important;
+  --color-text: var(--yd-text) !important;
+  --color-text--sub: var(--yd-muted) !important;
+  --color-text--placeholder: var(--yd-muted) !important;
+  --color-text--disable: var(--yd-muted) !important;
+  --color-text--accent: var(--yd-accent) !important;
+  --color-text-headline: var(--yd-text) !important;
+  --color-text--error: var(--yd-danger) !important;
+  --color-text--notice: var(--yd-danger) !important;
+  --color-text--danger: var(--yd-danger) !important;
+  --color-text--success: var(--yd-success) !important;
+  --color-bg: var(--yd-bg) !important;
+  --color-bg--hover: var(--yd-hover) !important;
+  --color-bg-neverchange: var(--yd-surface) !important;
+  --color-bg-announce: var(--yd-surface) !important;
+  --color-bg-infotop-data: var(--yd-raised) !important;
+  --color-link: var(--yd-link) !important;
+  --color-link--visited: var(--yd-visited) !important;
+  --color-link--hover: var(--yd-link-hover) !important;
+  --color-link-disabled: var(--yd-muted) !important;
+  --color-link-globalnav: var(--yd-text) !important;
+  --color-link-globalnav-bg--hover: var(--yd-hover) !important;
+  --color-link-login: var(--yd-accent) !important;
+  --color-dark-base: var(--yd-surface) !important;
+  --color-dark-text: var(--yd-text) !important;
+  --color-dark-headline: var(--yd-text) !important;
+  --color-link-darkbase: var(--yd-link) !important;
+  --color-link-darkbase--hover: var(--yd-link-hover) !important;
+  --color-ui-accent: var(--yd-accent) !important;
+  --color-ui-accent--overlay: var(--yd-raised) !important;
+  --color-ui-border: var(--yd-border) !important;
+  --color-ui-border--sub: var(--yd-border) !important;
+  --color-ui-border--secondary: var(--yd-border) !important;
+  --color-ui-border--light: var(--yd-border) !important;
+  --color-ui-border--emphasis: var(--yd-border) !important;
+  --color-ui-bg: var(--yd-surface) !important;
+  --color-ui-bg--hover: var(--yd-hover) !important;
+  --color-ui-bg--tapable: var(--yd-raised) !important;
+  --color-ui-bg--overlay-light: var(--yd-hover) !important;
+  --color-ui-bg--overlay-dark: var(--yd-raised) !important;
+  --color-ui-bg--navigation: var(--yd-surface) !important;
+  --color-ui-empty: var(--yd-raised) !important;
+  --color-ui-form-border: var(--yd-border) !important;
+  --color-ui-form-bg: var(--yd-raised) !important;
+  --color-ui-form-bg--site: var(--yd-raised) !important;
+  --color-ui-form-bg--input: var(--yd-bg) !important;
+  --color-ui-form-bg--disable: var(--yd-raised) !important;
+  --color-ui-form-check-border: var(--yd-muted) !important;
+  --color-ui-form-checked: var(--yd-link) !important;
+  --color-ui-button-bg: var(--yd-raised) !important;
+  --color-ui-button-bg--primary: var(--yd-raised) !important;
+  --color-ui-button-bg--primary-lighten: var(--yd-hover) !important;
+  --color-ui-button-bg--useradd: var(--yd-raised) !important;
+  --color-ui-button-bg--useradd-lighten: var(--yd-hover) !important;
+  --color-ui-button-bg--none-active: var(--yd-raised) !important;
+  --color-ui-button-bg--sub: var(--yd-raised) !important;
+  --color-ui-button-border: var(--yd-border) !important;
+  --color-ui-button-border--sub: var(--yd-border) !important;
+  --color-ui-theme-rank-1st: var(--yd-gold) !important;
+  --color-ui-theme-rank-2nd: var(--yd-silver) !important;
+  --color-ui-theme-rank-3rd: var(--yd-bronze) !important;
+  --color-info-line-separator: var(--yd-border) !important;
+  --color-form-shadow-focus: var(--yd-selection) !important;
+  --color-list-bullet: var(--yd-muted) !important;
+  --color-navlist-dark-text-shadow: transparent !important;
+  --color-panel-headline: var(--yd-raised) !important;
+  --color-panel-border: var(--yd-border) !important;
+  --color-toggle-headline-bg: var(--yd-raised) !important;
+  --color-toggle-headline-border: var(--yd-border) !important;
+  --color-trad-panel-border: var(--yd-border) !important;
+  --color-pr-text: var(--yd-muted) !important;
+  --color-custom-text: var(--yd-text) !important;
+  --color-custom-body-bg: var(--yd-bg) !important;
+  --color-custom-link: var(--yd-link) !important;
+  --color-custom-link-visited: var(--yd-visited) !important;
+  --color-custom-link-hover: var(--yd-link-hover) !important;
+  --color-custom-announce-border: var(--yd-border) !important;
+  --color-custom-telop-text: var(--yd-muted) !important;
+  --color-custom-telop-border: var(--yd-border) !important;
+  --color-custom-epilist-underline: var(--yd-border) !important;
+  --color-custom-epilist-underline-hover: var(--yd-link) !important;
+  --color-custom-epilist-underline-favorited: var(--yd-accent) !important;
+  --color-custom-pager-text-disabled: var(--yd-muted) !important;
+  --color-custom-pager-border-disabled: var(--yd-border) !important;
+  --color-custom-bkmfix-box: var(--yd-raised) !important;
+  --color-custom-bkmfix-text: var(--yd-link) !important;
+  --color-custom-favep-empty: var(--yd-muted) !important;
+  --color-adjust-layout-bg-close: var(--yd-raised) !important;
+  --color-adjust-layout-bg-title: var(--yd-raised) !important;
+  --color-adjust-layout-bg-console-display: var(--yd-bg) !important;
+  --color-adjust-layout-bg-button-hover: var(--yd-hover) !important;
+  --color-jumplink-text: var(--yd-text) !important;
+  --color-jumplink-bg: var(--yd-raised) !important;
+  --color-jumplink-text-shadow: transparent !important;
+  --color-hovernav-hover-bg: var(--yd-hover) !important;
+  --color-hovernav-link: var(--yd-link) !important;
+  --color-bookmark-add-text: var(--yd-accent) !important;
+  --color-bookmark-add-text--hover: var(--yd-link-hover) !important;
+  --color-bookmark-add-bg: var(--yd-raised) !important;
+  --color-bookmark-add-bg--hover: var(--yd-hover) !important;
+  --color-bookmark-add-border: var(--yd-border) !important;
+  --color-bookmark-add-border--hover: var(--yd-accent) !important;
+  --color-bookmark-change-text: var(--yd-link) !important;
+  --color-bookmark-change-text--hover: var(--yd-link-hover) !important;
+  --color-bookmark-change-bg: var(--yd-raised) !important;
+  --color-bookmark-change-bg--hover: var(--yd-hover) !important;
+  --color-bookmark-change-border: var(--yd-border) !important;
+  --color-bookmark-change-border--hover: var(--yd-link) !important;
+  --color-bookmark-disabled-text: var(--yd-muted) !important;
+  --color-bookmark-disabled-bg: var(--yd-raised) !important;
+  --color-bookmark-disabled-border: var(--yd-border) !important;
+  --color-novelview-box-outline: var(--yd-border) !important;
+  --color-novelpoint-form-bg: var(--yd-surface) !important;
+  --color-novelpoint-form-border: var(--yd-border) !important;
+  --color-favep-border: var(--yd-border) !important;
+  --color-favep-empty: var(--yd-muted) !important;
+  --color-favep-active: var(--yd-accent) !important;
+  --color-reaction-bg: var(--yd-raised) !important;
+  --color-reaction-bg--hover: var(--yd-hover) !important;
+  --color-reaction-outline--hover: var(--yd-link) !important;
+  --color-reaction-posted-bg: var(--yd-hover) !important;
+  --color-reaction-posted-bg--hover: var(--yd-raised) !important;
+  --color-reaction-posted-outline: var(--yd-accent) !important;
+  --color-reaction-posted-outline--hover: var(--yd-link) !important;
+  --color-reaction-select-bg: var(--yd-surface) !important;
+  --color-reaction-select-bg--hover: var(--yd-hover) !important;
+  --color-reaction-promote-bg: var(--yd-raised) !important;
+  --color-reaction-promote-text: var(--yd-text) !important;
+  --color-recommend-bg: var(--yd-bg) !important;
+  --color-recommend-border: var(--yd-border) !important;
+  --color-recommend-item-bg: var(--yd-surface) !important;
+  --color-recommend-title-bg: var(--yd-hover) !important;
+  --color-recommend-title-hover: var(--yd-link-hover) !important;
+  --color-recommend-title-visited: var(--yd-visited) !important;
+  --color-recommend-user-bg: var(--yd-raised) !important;
+  --color-recommend-user-text: var(--yd-success) !important;
+  --color-rankingtag-inline-bg: var(--yd-raised) !important;
+  --color-rankingtag-fieldset-border: var(--yd-border) !important;
+}
+
+html[data-yomou-dark="on"] body {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-bg) !important;
+  background-image: none !important;
+}
+
+html[data-yomou-dark="on"] ::selection {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-selection) !important;
+}
+
+html[data-yomou-dark="on"] :is(a:link, a:not([href])) {
+  color: var(--yd-link) !important;
+}
+
+html[data-yomou-dark="on"] a:visited {
+  color: var(--yd-visited) !important;
+}
+
+html[data-yomou-dark="on"] a:hover {
+  color: var(--yd-link-hover) !important;
+}
+
+html[data-yomou-dark="on"] :is(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--yd-accent) !important;
+  outline-offset: 3px !important;
+}
+
+html[data-yomou-dark="on"] :is(input, select, textarea, button) {
+  color: var(--yd-text) !important;
+  border-color: var(--yd-border) !important;
+  accent-color: var(--yd-accent) !important;
+}
+
+html[data-yomou-dark="on"] :where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="image"]), select, textarea) {
+  background-color: var(--yd-bg) !important;
+  box-shadow: none !important;
+}
+
+html[data-yomou-dark="on"] :is(input, textarea)::placeholder {
+  color: var(--yd-muted) !important;
+  opacity: 1 !important;
+}
+
+/* The site's checkmark SVG is white; keep enough contrast behind it. */
+html[data-yomou-dark="on"] .c-form__checkbox-input:checked::before {
+  background-color: var(--yd-selection) !important;
+}
+
+/* The site's custom select arrow is black. Native dark select rendering gives
+ * the control a visible arrow while preserving its sizing and keyboard use. */
+html[data-yomou-dark="on"] select.c-form__select {
+  appearance: auto !important;
+  background-image: none !important;
+}
+
+html[data-yomou-dark="on"] :is(button, .c-button, .c-form__input-group-button, .c-form__inline-button, input[type="button"], input[type="submit"], input[type="reset"]) {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-raised) !important;
+  border-color: var(--yd-border) !important;
+  text-shadow: none !important;
+}
+
+html[data-yomou-dark="on"] :is(button, .c-button, .c-form__input-group-button, input[type="button"], input[type="submit"]):hover {
+  background-color: var(--yd-hover) !important;
+}
+
+html[data-yomou-dark="on"] :is(input, select, textarea, button):disabled,
+html[data-yomou-dark="on"] :is(.is-disabled, .c-menu__item--disabled, .c-bookmark-button--disabled) {
+  color: var(--yd-muted) !important;
+  border-color: var(--yd-border) !important;
+}
+
+html[data-yomou-dark="on"] :is(hr, fieldset, th, td) {
+  border-color: var(--yd-border) !important;
+}
+
+/* Shared header, footer, ranking cards, flyout menus, and selected tabs. */
+html[data-yomou-dark="on"] :is(.p-header__body, .l-footer, .c-card, .p-ranktop-nav, .p-ranktop-nav__plate, .c-menu, .p-footer-nav, .p-bookmark-bar, .c-hover-nav__list, .c-modal, .remodal, .p-adjust-layout__controller) {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-surface) !important;
+  border-color: var(--yd-border) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-main-nav, .p-copyright) {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-raised) !important;
+}
+
+/* Brighten only the site's transparent wordmarks. Novel art and ad images
+ * retain their original colors, contrast, and brightness. */
+html[data-yomou-dark="on"] :is(.p-header__logo, .p-header__subnav-item--site) img {
+  filter: brightness(2.2) saturate(0.85);
+}
+
+html[data-yomou-dark="on"] :is(.p-main-nav a, .c-menu__item, .p-footer-nav__item a) {
+  color: var(--yd-text) !important;
+}
+
+html[data-yomou-dark="on"] :is(.c-tabnav-1st__current, .c-tabnav-2nd__current, .c-pager__item.is-current) {
+  color: var(--yd-accent) !important;
+  border-color: var(--yd-accent) !important;
+}
+
+html[data-yomou-dark="on"] :is(.c-tabnav-2nd__current, .p-main-nav__item.is-active > a) {
+  color: var(--yd-accent) !important;
+  background-color: var(--yd-surface) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-ranktop-item__points, .p-ranklist-item__points, .p-header__count) {
+  color: var(--yd-accent) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-ranktop-item__infomation, .p-ranklist-item__infomation, .p-ranktop-item__detail, .p-ranklist-item__detail) {
+  color: var(--yd-muted) !important;
+}
+
+/* The search page still uses the legacy stylesheet's universal #333 rule.
+ * Reset text only within that legacy wrapper, then restore semantic colors. */
+html[data-yomou-dark="on"] .c-trad-contents,
+html[data-yomou-dark="on"] .c-trad-contents * {
+  color: var(--yd-text) !important;
+  border-color: var(--yd-border) !important;
+  text-shadow: none !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(a:link, a:not([href])) {
+  color: var(--yd-link) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents a:visited {
+  color: var(--yd-visited) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents a:hover {
+  color: var(--yd-link-hover) !important;
+  opacity: 1 !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(#container, #contents, #main2, .main_box, .extra_box, .sub_box, .yomoumain_box, .yomou_in_box2, .search_box, .word_content, .genre_list, .detail_config_list, .search-history, .search-history_readmore, .searchkekka_box, .conf_box, .list_g a) {
+  background-color: var(--yd-surface) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(.searchForm_table th, .detail_config_list .description, .word_tab li, .search-history_setting-btn, td.left, td.bar) {
+  background: var(--yd-raised) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(.word_tab li.select, .word_tab li:hover, .search-history_list-link:hover, .search-history_edit-btn:hover, .list_g a:hover) {
+  color: var(--yd-accent) !important;
+  background: var(--yd-hover) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(.search_label, .search_label_conf, .search_label_colon, .search_label_history, .dc_search_label, .search_description, .searchdate_box, .attenstion2, .search-history_detail, .search-history_setting-note, .text80) {
+  color: var(--yd-muted) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(.attention, .order_point) {
+  color: var(--yd-accent) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(.btn-add, .btn-allgenre_reject, .btn-allgenre_select, .btn-radius1, .btn-search) {
+  color: var(--yd-text) !important;
+  background: var(--yd-raised) !important;
+  box-shadow: none !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents :is(.btn-add.select, .btn-add:hover, .btn-radius1:hover, .btn-allgenre_select:hover, .btn-allgenre_reject:hover) {
+  color: var(--yd-accent) !important;
+  background: var(--yd-hover) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents .btn-search {
+  color: var(--yd-accent-text) !important;
+  background: var(--yd-accent) !important;
+  border-color: var(--yd-accent) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents .search_box li.disabled label * {
+  color: var(--yd-muted) !important;
+}
+
+html[data-yomou-dark="on"] .c-trad-contents .search_box label:hover span {
+  color: var(--yd-link-hover) !important;
+}
+
+/* Inline illustration badges are UI, while novel illustrations remain intact. */
+html[data-yomou-dark="on"] .searchkekka_box span[style*="background"] {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-raised) !important;
+}
+
+/* Datepicker/autocomplete popups are appended outside the search wrapper. */
+html[data-yomou-dark="on"] :is(.ui-widget-content, .ui-widget-header, .ui-datepicker, .ui-menu, .ui-tooltip) {
+  color: var(--yd-text) !important;
+  background: var(--yd-surface) !important;
+  border-color: var(--yd-border) !important;
+}
+
+html[data-yomou-dark="on"] :is(.ui-state-default, .ui-widget-content .ui-state-default) {
+  color: var(--yd-link) !important;
+  background: var(--yd-raised) !important;
+  border-color: var(--yd-border) !important;
+}
+
+html[data-yomou-dark="on"] :is(.ui-state-active, .ui-state-hover, .ui-state-highlight, .ui-widget-content .ui-state-active, .ui-widget-content .ui-state-hover) {
+  color: var(--yd-accent) !important;
+  background: var(--yd-hover) !important;
+  border-color: var(--yd-accent) !important;
+}
+
+/* Novel TOC, text, reading controls, and bookmark/rating dialogs. */
+html[data-yomou-dark="on"] :is(.p-novel, .p-novel__body, .p-novel__text, #novel_contents, #novel_honbun, #novel_p, #novel_a) {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-bg) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-novel__text p, .p-novel__title, .p-novel__summary, .p-novel__author, .p-eplist__chapter-title, .novel_title, .novel_subtitle, .chapter_title) {
+  color: var(--yd-text) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-eplist__update, .p-novel__number, .p-novel__date-published, .long_update) {
+  color: var(--yd-muted) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-eplist__sublist, .novel_sublist2):hover {
+  background-color: var(--yd-surface) !important;
+}
+
+html[data-yomou-dark="on"] :is(.p-bookmark-modal__title, .p-adjust-layout__switch span, .p-adjust-layout__title, .p-adjust-layout__console-display, .c-navigater) {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-raised) !important;
+  border-color: var(--yd-border) !important;
+  text-shadow: none !important;
+}
+
+html[data-yomou-dark="on"] :is(.c-modal__item-message, .p-novelpoint-form__getpoint) {
+  color: var(--yd-success) !important;
+}
+
+html[data-yomou-dark="on"] :is(.c-modal__item-message-error, .c-novel-attention__warning) {
+  color: var(--yd-danger) !important;
+}
+
+html[data-yomou-dark="on"] :is(.c-toast--addend, .c-toast--error) {
+  color: var(--yd-text) !important;
+  background-color: var(--yd-raised) !important;
+  border: 1px solid var(--yd-border) !important;
+}
+
+html[data-yomou-dark="on"] .c-toast--error {
+  border-color: var(--yd-danger) !important;
+}
+
+html[data-yomou-dark="on"] .toaster_close {
+  color: var(--yd-link) !important;
+  background-color: var(--yd-surface) !important;
+}
+
+/* Reader adjustments are separately opt-in. Only prose changes: original
+ * title, navigation, illustrations, ruby annotation ratio and layout survive. */
+html[data-yomou-dark="on"][data-yomou-reader="on"] :is(.p-novel__text, #novel_honbun, #novel_p, #novel_a) {
+  font-size: var(--yd-reader-size, 18px) !important;
+  line-height: var(--yd-reader-leading, 1.9) !important;
+}
+
+html[data-yomou-dark="on"][data-yomou-reader="on"] :is(.p-novel__text, #novel_honbun, #novel_p, #novel_a) p {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}

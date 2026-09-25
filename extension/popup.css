@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: "Yu Gothic UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 13px;
+  color: #e7ecef;
+  background: #111820;
+  --accent: #8bcfc1;
+  --muted: #a1aeb9;
+  --border: #33414e;
+}
+
+* { box-sizing: border-box; }
+body { width: 360px; margin: 0; }
+main { padding: 18px 22px 13px; }
+fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+h1, h2, p { margin: 0; }
+button, input { font: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+.header { display: flex; align-items: center; gap: 11px; margin-bottom: 16px; }
+.brand-icon { display: grid; place-items: center; width: 41px; height: 45px; color: var(--accent); flex-shrink: 0; }
+.brand-icon img { display: block; width: 41px; height: 41px; }
+h1 { font-size: 23px; font-weight: 650; letter-spacing: .075em; line-height: 1.4; }
+.tagline { margin-top: 3px; font-size: 10px; letter-spacing: .03em; color: var(--muted); }
+.edition { align-self: flex-start; margin-left: auto; padding: 3px 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 9px; color: var(--muted); white-space: nowrap; }
+.setting-section { margin-bottom: 14px; }
+.section-title { display: block; margin-bottom: 8px; color: #dce5eb; font-size: 12px; font-weight: 600; letter-spacing: .045em; }
+.segmented { display: grid; grid-template-columns: 1fr .8fr 1.65fr; padding: 4px; border: 1px solid #2d3945; border-radius: 9px; background: #0c131a; gap: 3px; }
+.segmented label, .palette-choice { position: relative; cursor: pointer; }
+.segmented input, .palette-choice input { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; }
+.segmented span { display: block; padding: 8px 4px; text-align: center; border: 1px solid transparent; border-radius: 6px; font-size: 11px; color: #a8b5c0; }
+.segmented input:checked + span { color: #c1ecdf; background: #263c3c; border-color: #42645e; }
+.segmented label:hover span, .palette-choice:hover > span { color: #fff; }
+.segmented input:focus-visible + span, .palette-choice input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.palette-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.palette-choice > span { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 9px 7px; background: #19232d; border: 1px solid #33414e; border-radius: 8px; color: #b9c4cd; font-size: 12px; }
+.palette-choice input:checked + span { color: #e1f4ee; border-color: #87c2b5; background: #20312f; box-shadow: inset 0 0 0 1px #87c2b522; }
+.swatch { width: 16px; height: 16px; border: 1px solid #74818c; border-radius: 50%; }
+.swatch-night { background: #111722; }
+.swatch-ink { background: #0b0d10; }
+.swatch-warm { background: #1d1915; border-color: #a58d77; }
+.reader-section { border-top: 1px solid #293540; padding-top: 14px; }
+.reader-toggle { display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; }
+.reader-toggle .section-title { margin-bottom: 4px; }
+.setting-description { display: block; font-size: 10px; color: var(--muted); }
+.reader-toggle input { appearance: none; flex-shrink: 0; width: 33px; height: 20px; margin: 0; padding: 2px; border: 1px solid #536170; border-radius: 20px; background: #2c3743; cursor: pointer; }
+.reader-toggle input::before { content: ""; display: block; width: 14px; height: 14px; background: #b5c0c9; border-radius: 50%; transition: transform 120ms ease; }
+.reader-toggle input:checked { background: #88c7b8; border-color: #88c7b8; }
+.reader-toggle input:checked::before { background: #14241f; transform: translateX(13px); }
+.reader-toggle input:focus-visible, input[type="range"]:focus-visible, a:focus-visible, #preview-text:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.reader-controls { margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.reader-controls:disabled { opacity: .48; }
+.range-caption { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; margin-bottom: 7px; font-size: 10px; color: #c1ccd5; }
+output { font-size: 10px; font-variant-numeric: tabular-nums; color: #afd9cd; white-space: nowrap; }
+input[type="range"] { display: block; width: 100%; height: 17px; margin: 0; accent-color: var(--accent); cursor: pointer; }
+input:disabled { cursor: default; }
+
+.preview { --preview-bg: #111722; --preview-text: #dce3ed; --preview-muted: #a2afc2; margin-top: 14px; padding: 11px 14px 12px; border: 1px solid #3a4755; border-radius: 9px; background: var(--preview-bg); color: var(--preview-text); overflow-wrap: anywhere; }
+.preview[data-palette="ink"] { --preview-bg: #0b0d10; --preview-text: #dce0e5; --preview-muted: #a8b0ba; }
+.preview[data-palette="warm"] { --preview-bg: #1d1915; --preview-text: #e6dccd; --preview-muted: #bcae9c; border-color: #50483d; }
+.preview[data-mode="light"] { --preview-bg: #fff; --preview-text: #31353a; --preview-muted: #646d76; border-color: #d4d9de; }
+.preview-topline { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 9px; color: var(--preview-muted); }
+.preview-topline h2 { font-size: 9px; font-weight: 500; letter-spacing: .1em; }
+.preview-topline span { font-size: 9px; }
+#preview-text { max-height: 88px; overflow-y: auto; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 14px; line-height: 1.9; letter-spacing: .02em; }
+.save-status { min-height: 15px; margin-top: 8px; text-align: center; color: #a5c5bb; font-size: 10px; line-height: 1.5; }
+.save-status[data-error="true"] { color: #f1b8ad; }
+.site-links { display: flex; justify-content: center; gap: 24px; margin-top: 11px; padding-top: 10px; border-top: 1px solid #293540; }
+a { color: #becbcf; font-size: 11px; text-decoration: none; border-radius: 2px; }
+a:hover { color: #b8e8db; text-decoration: underline; text-underline-offset: 3px; }
+a span { margin-left: 3px; color: #79948d; }
+.privacy-note { margin-top: 9px; color: #8998a6; text-align: center; font-size: 9px; line-height: 1.75; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before { transition: none !important; }
+}
+@media (forced-colors: active) {
+  .segmented input:checked + span, .palette-choice input:checked + span { outline: 2px solid Highlight; }
+  .reader-toggle input { appearance: auto; }
+  .reader-toggle input::before { display: none; }
+}
