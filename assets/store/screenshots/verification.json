@@ -1,0 +1,182 @@
+{
+  "disclaimer": "動作検証用の架空デモ画面です。作品・著者・本文・数値は架空です。対象サイトの実際の表示とは異なります。",
+  "source": "Original fictional fixtures + unmodified extension theme.css, settings.js, content.js and popup files. Chrome storage is mocked locally; no original site HTML/CSS/assets are used.",
+  "externalRequests": [],
+  "screenshots": [
+    {
+      "file": "01-light-dark.png",
+      "width": 1280,
+      "height": 800,
+      "bytes": 185433,
+      "checks": [
+        {
+          "kind": "reader",
+          "mode": "light",
+          "palette": null,
+          "background": "rgb(252, 252, 250)",
+          "text": "rgb(48, 56, 70)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": "17px",
+          "width": 583,
+          "viewport": 583
+        },
+        {
+          "kind": "reader",
+          "mode": "dark",
+          "palette": "night",
+          "background": "rgb(17, 23, 34)",
+          "text": "rgb(220, 227, 237)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": "17px",
+          "width": 583,
+          "viewport": 583
+        }
+      ]
+    },
+    {
+      "file": "02-three-palettes.png",
+      "width": 1280,
+      "height": 800,
+      "bytes": 170633,
+      "checks": [
+        {
+          "kind": "reader",
+          "mode": "dark",
+          "palette": "night",
+          "background": "rgb(17, 23, 34)",
+          "text": "rgb(220, 227, 237)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": "16px",
+          "width": 381,
+          "viewport": 381
+        },
+        {
+          "kind": "reader",
+          "mode": "dark",
+          "palette": "ink",
+          "background": "rgb(11, 13, 16)",
+          "text": "rgb(220, 224, 229)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": "16px",
+          "width": 381,
+          "viewport": 381
+        },
+        {
+          "kind": "reader",
+          "mode": "dark",
+          "palette": "warm",
+          "background": "rgb(29, 25, 21)",
+          "text": "rgb(230, 220, 205)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": "16px",
+          "width": 381,
+          "viewport": 381
+        }
+      ]
+    },
+    {
+      "file": "03-supported-pages.png",
+      "width": 1280,
+      "height": 800,
+      "bytes": 140374,
+      "checks": [
+        {
+          "kind": "ranking",
+          "mode": "dark",
+          "palette": "night",
+          "background": "rgb(17, 23, 34)",
+          "text": "rgb(220, 227, 237)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": null,
+          "width": 381,
+          "viewport": 381
+        },
+        {
+          "kind": "search",
+          "mode": "dark",
+          "palette": "night",
+          "background": "rgb(17, 23, 34)",
+          "text": "rgb(220, 227, 237)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": null,
+          "width": 381,
+          "viewport": 381
+        },
+        {
+          "kind": "toc",
+          "mode": "dark",
+          "palette": "night",
+          "background": "rgb(17, 23, 34)",
+          "text": "rgb(220, 227, 237)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": null,
+          "width": 381,
+          "viewport": 381
+        }
+      ]
+    },
+    {
+      "file": "04-reader-settings.png",
+      "width": 1280,
+      "height": 800,
+      "bytes": 157192,
+      "checks": [
+        {
+          "kind": "reader",
+          "mode": "dark",
+          "palette": "warm",
+          "background": "rgb(29, 25, 21)",
+          "text": "rgb(230, 220, 205)",
+          "font": "\"Yu Gothic UI\", \"Yu Gothic\", Meiryo, sans-serif",
+          "readerSize": "20px",
+          "width": 806,
+          "viewport": 806
+        },
+        {
+          "kind": "popup",
+          "productionHtml": true,
+          "selectedPalette": "warm",
+          "fontSize": "20 px",
+          "uniformScale": 0.978369384359401,
+          "height": 599,
+          "width": 360
+        }
+      ]
+    },
+    {
+      "file": "05-actual-settings-only.png",
+      "width": 1280,
+      "height": 800,
+      "bytes": 106857,
+      "checks": [
+        {
+          "kind": "popup",
+          "productionHtml": true,
+          "selectedPalette": "night",
+          "fontSize": "18 px",
+          "uniformScale": 0.9734982332155477,
+          "height": 564,
+          "width": 360
+        },
+        {
+          "kind": "popup",
+          "productionHtml": true,
+          "selectedPalette": "ink",
+          "fontSize": "18 px",
+          "uniformScale": 0.9734982332155477,
+          "height": 564,
+          "width": 360
+        },
+        {
+          "kind": "popup",
+          "productionHtml": true,
+          "selectedPalette": "warm",
+          "fontSize": "18 px",
+          "uniformScale": 0.9734982332155477,
+          "height": 564,
+          "width": 360
+        }
+      ]
+    }
+  ]
+}

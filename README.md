@@ -13,7 +13,7 @@
 
 **[最新版をダウンロード](https://github.com/check5004/yomou-syosetu-darkmode/releases/latest)** · [変更内容](RELEASE_NOTES.md) · [プライバシー](PRIVACY.md)
 
-開発予定：[ToDo](TODO.md) · [Chromeウェブストア公開準備](docs/CHROME_WEB_STORE.md)
+開発予定：[ToDo](TODO.md) · [Chromeウェブストア公開準備](docs/CHROME_WEB_STORE.md) · [掲載画像の検証](docs/STORE_ASSET_VALIDATION.md)
 
 ## 特長
 
