@@ -13,6 +13,8 @@
 
 **[最新版をダウンロード](https://github.com/check5004/yomou-syosetu-darkmode/releases/latest)** · [変更内容](RELEASE_NOTES.md) · [プライバシー](PRIVACY.md)
 
+開発予定：[ToDo](TODO.md) · [Chromeウェブストア公開準備](docs/CHROME_WEB_STORE.md)
+
 ## 特長
 
 - **3種類の配色**：青みのある「夜」、黒に近い「漆黒」、柔らかな「暖色」。
