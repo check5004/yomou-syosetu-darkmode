@@ -25,6 +25,13 @@ for (const file of files) {
   assert.ok(existsSync(path), `Missing extension file: ${file}`);
   if (file.endsWith('.js')) execFileSync(process.execPath, ['--check', path]);
 }
-assert.deepEqual(manifest.content_scripts[0].matches, ['*://yomou.syosetu.com/*', '*://ncode.syosetu.com/*']);
+assert.deepEqual(manifest.content_scripts[0].matches, [
+  '*://yomou.syosetu.com/*',
+  '*://ncode.syosetu.com/*',
+  '*://syosetu.com/site/group/',
+  '*://noc.syosetu.com/*',
+  '*://novel18.syosetu.com/*',
+  '*://nl.syosetu.com/redirect/ageauth/*',
+]);
 assert.equal(manifest.content_scripts[0].run_at, 'document_start');
 console.log(`Manifest and JavaScript OK (${files.size} files).`);

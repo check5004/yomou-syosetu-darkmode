@@ -1,6 +1,6 @@
 {
   "name": "yomou-syosetu-darkmode",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Unofficial dark mode Chrome extension for yomou.syosetu.com and ncode.syosetu.com",
   "engines": {

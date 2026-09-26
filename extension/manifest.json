@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "読もう、夜。 — 小説を読もう！ダークモード",
   "short_name": "読もう、夜。",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "小説を読もう！のランキング・検索、小説家になろうの目次・本文を、読みやすいダークモードに。非公式の拡張機能です。",
   "minimum_chrome_version": "109",
   "permissions": ["storage"],
@@ -22,7 +22,14 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://yomou.syosetu.com/*", "*://ncode.syosetu.com/*"],
+      "matches": [
+        "*://yomou.syosetu.com/*",
+        "*://ncode.syosetu.com/*",
+        "*://syosetu.com/site/group/",
+        "*://noc.syosetu.com/*",
+        "*://novel18.syosetu.com/*",
+        "*://nl.syosetu.com/redirect/ageauth/*"
+      ],
       "css": ["theme.css"],
       "js": ["settings.js", "content.js"],
       "run_at": "document_start"

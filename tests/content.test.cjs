@@ -22,6 +22,33 @@ test("saved light mode stays off even when the OS is dark", async () => {
   assert.equal(app.root.getAttribute("data-yomou-dark"), null);
 });
 
+test("Nocturne site styling follows initial and live theme preferences", async () => {
+  const app = contentHarness({ hostname: "noc.syosetu.com" });
+  await settle();
+  assert.equal(app.root.getAttribute("data-yomou-site"), "noc");
+  app.changeSettings({ mode: "light" });
+  assert.equal(app.root.getAttribute("data-yomou-site"), null);
+  app.changeSettings({ mode: "dark" });
+  assert.equal(app.root.getAttribute("data-yomou-site"), "noc");
+});
+
+test("saved light mode removes Nocturne site styling on startup", async () => {
+  const app = contentHarness({ hostname: "noc.syosetu.com", saved: { mode: "light" }, darkSystem: true });
+  app.root.setAttribute("data-yomou-site", "noc");
+  await settle();
+  assert.equal(app.root.getAttribute("data-yomou-site"), null);
+});
+
+test("other hosts never receive Nocturne site styling", async () => {
+  for (const hostname of ["yomou.syosetu.com", "syosetu.com", "ncode.syosetu.com", "novel18.syosetu.com", "mnlt.syosetu.com", "mid.syosetu.com"]) {
+    const app = contentHarness({ hostname });
+    app.root.setAttribute("data-yomou-site", "noc");
+    await settle();
+    assert.equal(app.root.getAttribute("data-yomou-dark"), "on");
+    assert.equal(app.root.getAttribute("data-yomou-site"), null, hostname);
+  }
+});
+
 test("system mode tracks OS changes and forced dark mode remains on", async () => {
   const app = contentHarness({ saved: { mode: "system", palette: "warm" } });
   await settle();

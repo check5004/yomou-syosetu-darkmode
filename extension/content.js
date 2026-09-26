@@ -15,6 +15,7 @@
     if (!dark) {
       root.removeAttribute("data-yomou-dark");
       root.removeAttribute("data-yomou-palette");
+      root.removeAttribute("data-yomou-site");
       root.removeAttribute("data-yomou-reader");
       root.style.removeProperty("--yd-reader-size");
       root.style.removeProperty("--yd-reader-leading");
@@ -23,6 +24,11 @@
 
     root.setAttribute("data-yomou-dark", "on");
     root.setAttribute("data-yomou-palette", settings.palette);
+    if (location.hostname === "noc.syosetu.com") {
+      root.setAttribute("data-yomou-site", "noc");
+    } else {
+      root.removeAttribute("data-yomou-site");
+    }
     if (settings.customReader) {
       root.setAttribute("data-yomou-reader", "on");
       root.style.setProperty("--yd-reader-size", `${settings.fontSize}px`);

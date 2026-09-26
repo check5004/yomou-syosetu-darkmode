@@ -52,7 +52,7 @@ function settingsHarness(local) {
   return context.YomouDark;
 }
 
-function contentHarness({ saved, darkSystem = false, missingRoot = false, initialRead } = {}) {
+function contentHarness({ saved, darkSystem = false, missingRoot = false, initialRead, hostname = "yomou.syosetu.com" } = {}) {
   const changes = [];
   const observers = [];
   const root = rootElement();
@@ -78,7 +78,7 @@ function contentHarness({ saved, darkSystem = false, missingRoot = false, initia
     disconnect() { this.disconnected = true; }
   }
   const context = vm.createContext({
-    chrome, document, window, MutationObserver,
+    chrome, document, window, MutationObserver, location: { hostname },
     matchMedia(query) {
       if (query !== "(prefers-color-scheme: dark)") throw new Error(`Unexpected media query: ${query}`);
       return media;
