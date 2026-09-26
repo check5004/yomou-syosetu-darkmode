@@ -6,7 +6,7 @@
 
 **小説を探すときも、読むときも。落ち着いたダークモードを。**
 
-「小説を読もう！」のランキング・検索と、「小説家になろう」の小説目次・本文に対応する、非公式のChrome拡張機能です。元のレイアウトを保ち、背景・文字・入力欄を読みやすい配色に切り替えます。
+対応する小説サイトのランキング・検索・目次・本文を、読みやすいダークモードにする非公式のChrome拡張機能です。元のレイアウトを保ち、背景・文字・入力欄の配色を切り替えます。
 
 [![CI](https://github.com/check5004/yomou-syosetu-darkmode/actions/workflows/ci.yml/badge.svg)](https://github.com/check5004/yomou-syosetu-darkmode/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/check5004/yomou-syosetu-darkmode)](https://github.com/check5004/yomou-syosetu-darkmode/releases/latest)
@@ -74,6 +74,8 @@ ZIP版には自動更新機能がありません。新しいバージョンはRe
 
 ## 対応ページ
 
+主な対応先は `yomou.syosetu.com` と `ncode.syosetu.com` です。
+
 | ページ | 対象 |
 | --- | --- |
 | ランキング | ランキングTOP、総合・ジャンル別、日間・週間・月間など |
@@ -83,11 +85,13 @@ ZIP版には自動更新機能がありません。新しいバージョンはRe
 
 対応サイトのトップページや作品情報にも共通の配色を適用します。作者マイページ、ログイン画面、感想サイトは対象外です。
 
+詳しい対象URLは [manifest.json](extension/manifest.json) で確認できます。
+
 ## 設定
 
 <img src="docs/screenshots/popup.png" width="360" alt="表示モード、夜の色、本文の文字サイズと行間を設定する画面">
 
-掲載画像では、下部のサイト名を不透明な灰色の図形で覆っています。実際の設定画面にはこの図形は表示されません。
+掲載画像は表記調整前の設定画面で、下部のサイト名を不透明な灰色の図形で覆っています。現在の設定画面は「対象サイトの運営元による公式製品ではありません。」という表記で、図形は表示されません。
 
 | 項目 | 動作 |
 | --- | --- |
@@ -175,4 +179,4 @@ tests/               回帰テスト
 
 ---
 
-本拡張機能は株式会社ヒナプロジェクトおよび「小説家になろう」「小説を読もう！」の公式製品ではありません。
+本拡張機能は、対象サイトの運営元が提供する公式製品ではありません。
