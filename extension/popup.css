@@ -65,8 +65,9 @@ input:disabled { cursor: default; }
 #preview-text { max-height: 88px; overflow-y: auto; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 14px; line-height: 1.9; letter-spacing: .02em; }
 .save-status { min-height: 15px; margin-top: 8px; text-align: center; color: #a5c5bb; font-size: 10px; line-height: 1.5; }
 .save-status[data-error="true"] { color: #f1b8ad; }
-.site-links { display: flex; justify-content: center; gap: 24px; margin-top: 11px; padding-top: 10px; border-top: 1px solid #293540; }
+.site-links { display: flex; align-items: baseline; justify-content: center; gap: 24px; margin-top: 11px; padding-top: 10px; border-top: 1px solid #293540; }
 a { color: #becbcf; font-size: 11px; text-decoration: none; border-radius: 2px; }
+.repository-link { color: var(--muted); font-size: 10px; }
 a:hover { color: #b8e8db; text-decoration: underline; text-underline-offset: 3px; }
 a span { margin-left: 3px; color: #79948d; }
 .privacy-note { margin-top: 9px; color: #8998a6; text-align: center; font-size: 9px; line-height: 1.75; }

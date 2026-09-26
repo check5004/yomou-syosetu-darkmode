@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "読もう、夜。 — 小説サイト用ダークモード",
   "short_name": "読もう、夜。",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "対応する小説サイトのランキング・検索・目次・本文を、読みやすいダークモードに。配色・文字サイズ・行間を調整できる非公式の拡張機能です。",
   "minimum_chrome_version": "109",
   "permissions": ["storage"],
