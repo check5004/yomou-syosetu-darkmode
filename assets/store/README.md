@@ -4,19 +4,21 @@
 
 ## スクリーンショット
 
-検索・ランキング・小説目次の3画面を用意しました。以前の架空ページによる5枚の試作は撤回しました。
+検索・ランキング・小説目次の3画面について、有効・無効の2状態を用意しています。READMEでは無効を左、有効を右に並べて比較します。
 
-| 画像 | 対象画面 |
-| --- | --- |
-| [01-search.png](screenshots/01-search.png) | 検索画面 |
-| [02-ranking.png](screenshots/02-ranking.png) | ランキング画面 |
-| [03-toc.png](screenshots/03-toc.png) | 小説目次画面 |
+| 対象画面 | 無効（サイト本来の表示） | 有効（夜） |
+| --- | --- | --- |
+| 検索 | [01-search-off.png](screenshots/01-search-off.png) | [01-search.png](screenshots/01-search.png) |
+| ランキング | [02-ranking-off.png](screenshots/02-ranking-off.png) | [02-ranking.png](screenshots/02-ranking.png) |
+| 小説目次 | [03-toc-off.png](screenshots/03-toc-off.png) | [03-toc.png](screenshots/03-toc.png) |
 
 撮影元は、既にローカル保存していた実サイトのHTML・CSSです。表示に不足していた静的素材6点（ロゴ3点・フォント2点・ヘルプアイコン）を補い、拡張機能 v1.1.0 の実際の配色コードを適用して1280×800で描画します。現在公開中のページをそのまま撮影したものではありません。
 
 作品名・作者名・あらすじ・章やエピソードの見出しが描画される範囲を取得し、その文字の範囲だけにCSSのぼかしを重ねて撮影します。検索条件やボタンなど、機能を伝えるためのUIとレイアウトは残します。
 
-元HTML・CSSと未加工画像はGit管理対象外で保管し、このフォルダーでは加工後の3枚だけを公開します。1280×800の最終画像を目視確認し、未ぼかし画像との比較で文字を隠す矩形の外側の変更画素は3枚とも0でした。[検証データ](screenshots/verification.json)
+元HTML・CSSと未加工画像はGit管理対象外で保管し、このフォルダーでは文字をぼかした画像だけを公開します。各画像は1280×800です。[有効状態の検証データ](screenshots/verification.json)・[無効状態と比較の検証データ](screenshots/before-after-verification.json)
+
+無効状態は拡張機能の設定を「オフ」にして撮影します。反転や画像の色変換は行わず、サイト本来のCSSによる表示を使います。作品の文字を隠す範囲とスクロール位置は有効・無効でそろえています。
 
 ## 紹介画像
 

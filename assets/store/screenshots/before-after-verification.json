@@ -1,0 +1,690 @@
+{
+  "createdAt": "2026-09-27",
+  "source": "Same previously saved real site HTML/CSS/assets as published dark screenshots; offline only. Original site scripts and advertisements omitted.",
+  "method": "Actual extension content/settings scripts with in-memory settings mode=light. Browser-rendered CSS backdrop-filter text masks identical to published dark screenshots.",
+  "screenshots": [
+    {
+      "name": "search",
+      "width": 1280,
+      "height": 800,
+      "mode": "light",
+      "offState": {
+        "scrollY": 0,
+        "bodyBg": "rgb(241, 243, 245)",
+        "bodyColor": "rgb(51, 51, 51)",
+        "rootBg": "rgba(0, 0, 0, 0)",
+        "dark": null,
+        "palette": null,
+        "reader": null
+      },
+      "originalStyleRestored": true,
+      "originalPixelDifference": 0,
+      "scrollMatchesPublishedDark": true,
+      "textRectanglesIdentical": true,
+      "masksIdentical": true,
+      "blurRadiusPx": 6,
+      "maskPaddingPx": 2,
+      "masks": [
+        {
+          "target": ".novel_h",
+          "x": 163,
+          "y": 579,
+          "width": 443,
+          "height": 27
+        },
+        {
+          "target": ".searchkekka_box > a[href*=\"mypage.syosetu.com\"]",
+          "x": 201,
+          "y": 611,
+          "width": 60,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 638,
+          "width": 597,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 660,
+          "width": 580,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 681,
+          "width": 593,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 703,
+          "width": 584,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 725,
+          "width": 593,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 747,
+          "width": 593,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 769,
+          "width": 597,
+          "height": 22
+        },
+        {
+          "target": ".ex",
+          "x": 303,
+          "y": 790,
+          "width": 593,
+          "height": 10
+        },
+        {
+          "target": "N-code",
+          "x": 394,
+          "y": 611,
+          "width": 62,
+          "height": 22
+        }
+      ],
+      "changedPixels": 110395,
+      "changedOutsideMasks": 0,
+      "sourceTextModified": false,
+      "offFile": "search-off-blurred.png",
+      "sha256": "a05527259ed6f0ecc7074b3cb0d01df3b745dc020c8e9a3d1c616bd88d4d307c",
+      "darkReproduction": {
+        "state": {
+          "scrollY": 0,
+          "bodyBg": "rgb(17, 23, 34)",
+          "bodyColor": "rgb(220, 227, 237)",
+          "rootBg": "rgb(17, 23, 34)",
+          "dark": "on",
+          "palette": "night",
+          "reader": null
+        },
+        "changedOutsideMasks": 0,
+        "publishedPixelDifference": 0,
+        "sha256": "a1c34061f8036b18b0b8fdc129e67366783f6b5c212ad621a3d3a00797358767"
+      },
+      "externalRequestsBlocked": 0,
+      "file": "01-search-off.png"
+    },
+    {
+      "name": "ranking",
+      "width": 1280,
+      "height": 800,
+      "mode": "light",
+      "offState": {
+        "scrollY": 0,
+        "bodyBg": "rgb(241, 243, 245)",
+        "bodyColor": "rgb(51, 51, 51)",
+        "rootBg": "rgba(0, 0, 0, 0)",
+        "dark": null,
+        "palette": null,
+        "reader": null
+      },
+      "originalStyleRestored": true,
+      "originalPixelDifference": 0,
+      "scrollMatchesPublishedDark": true,
+      "textRectanglesIdentical": true,
+      "masksIdentical": true,
+      "blurRadiusPx": 6,
+      "maskPaddingPx": 2,
+      "masks": [
+        {
+          "target": ".p-ranktop-item__title",
+          "x": 174,
+          "y": 379,
+          "width": 438,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__title",
+          "x": 174,
+          "y": 400,
+          "width": 60,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__title",
+          "x": 174,
+          "y": 589,
+          "width": 298,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__title",
+          "x": 708,
+          "y": 379,
+          "width": 438,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__title",
+          "x": 708,
+          "y": 400,
+          "width": 144,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__title",
+          "x": 708,
+          "y": 613,
+          "width": 158,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__name",
+          "x": 174,
+          "y": 432,
+          "width": 60,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__name",
+          "x": 174,
+          "y": 621,
+          "width": 32,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__name",
+          "x": 708,
+          "y": 432,
+          "width": 32,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__name",
+          "x": 708,
+          "y": 645,
+          "width": 60,
+          "height": 24
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 174,
+          "y": 514,
+          "width": 25,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 212,
+          "y": 514,
+          "width": 89,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 315,
+          "y": 514,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 381,
+          "y": 514,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 448,
+          "y": 514,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 490,
+          "y": 514,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 174,
+          "y": 538,
+          "width": 88,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 276,
+          "y": 538,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 319,
+          "y": 538,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 373,
+          "y": 538,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 428,
+          "y": 538,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 470,
+          "y": 538,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 513,
+          "y": 538,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 174,
+          "y": 724,
+          "width": 64,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 252,
+          "y": 724,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 307,
+          "y": 724,
+          "width": 89,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 409,
+          "y": 724,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 476,
+          "y": 724,
+          "width": 77,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 174,
+          "y": 748,
+          "width": 76,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 708,
+          "y": 514,
+          "width": 25,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 746,
+          "y": 514,
+          "width": 65,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 825,
+          "y": 514,
+          "width": 92,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 931,
+          "y": 514,
+          "width": 89,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 1033,
+          "y": 514,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 1100,
+          "y": 514,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 708,
+          "y": 538,
+          "width": 88,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 810,
+          "y": 538,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 865,
+          "y": 538,
+          "width": 77,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 955,
+          "y": 538,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 1010,
+          "y": 538,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 1076,
+          "y": 538,
+          "width": 65,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 708,
+          "y": 561,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 750,
+          "y": 561,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 817,
+          "y": 561,
+          "width": 41,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 871,
+          "y": 561,
+          "width": 53,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 708,
+          "y": 748,
+          "width": 25,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 746,
+          "y": 748,
+          "width": 77,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 837,
+          "y": 748,
+          "width": 29,
+          "height": 21
+        },
+        {
+          "target": ".p-ranktop-item__keyword",
+          "x": 879,
+          "y": 748,
+          "width": 29,
+          "height": 21
+        }
+      ],
+      "changedPixels": 83277,
+      "changedOutsideMasks": 0,
+      "sourceTextModified": false,
+      "offFile": "ranking-off-blurred.png",
+      "sha256": "65404b3e713b862844b931ab326cc719a8796a1242d346b097ce4c0472cc7009",
+      "darkReproduction": {
+        "state": {
+          "scrollY": 0,
+          "bodyBg": "rgb(17, 23, 34)",
+          "bodyColor": "rgb(220, 227, 237)",
+          "rootBg": "rgb(17, 23, 34)",
+          "dark": "on",
+          "palette": "night",
+          "reader": null
+        },
+        "changedOutsideMasks": 0,
+        "publishedPixelDifference": 0,
+        "sha256": "21af576f2ea2d196d3411ee8f2dbb10baa890239cae6d6e64be243350e454c35"
+      },
+      "externalRequestsBlocked": 0,
+      "file": "02-ranking-off.png"
+    },
+    {
+      "name": "toc",
+      "width": 1280,
+      "height": 800,
+      "mode": "light",
+      "offState": {
+        "scrollY": 1038,
+        "bodyBg": "rgb(255, 255, 255)",
+        "bodyColor": "rgb(68, 68, 68)",
+        "rootBg": "rgba(0, 0, 0, 0)",
+        "dark": null,
+        "palette": null,
+        "reader": null
+      },
+      "originalStyleRestored": true,
+      "originalPixelDifference": 0,
+      "scrollMatchesPublishedDark": true,
+      "textRectanglesIdentical": true,
+      "masksIdentical": true,
+      "blurRadiusPx": 6,
+      "maskPaddingPx": 2,
+      "masks": [
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 157,
+          "width": 251,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 193,
+          "width": 159,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 229,
+          "width": 205,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 265,
+          "width": 97,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 301,
+          "width": 159,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 337,
+          "width": 174,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 373,
+          "width": 113,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 409,
+          "width": 113,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 313,
+          "y": 445,
+          "width": 113,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 481,
+          "width": 190,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 517,
+          "width": 159,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 553,
+          "width": 175,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 589,
+          "width": 144,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 625,
+          "width": 113,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 661,
+          "width": 175,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 697,
+          "width": 129,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 733,
+          "width": 82,
+          "height": 28
+        },
+        {
+          "target": ".p-eplist__subtitle",
+          "x": 322,
+          "y": 769,
+          "width": 67,
+          "height": 28
+        }
+      ],
+      "changedPixels": 73257,
+      "changedOutsideMasks": 0,
+      "sourceTextModified": false,
+      "offFile": "toc-off-blurred.png",
+      "sha256": "6a87c7f3bb6528d4cc30bfc39962dac15503c9e1f7cceccf5f09a0b0ae35a000",
+      "darkReproduction": {
+        "state": {
+          "scrollY": 1038,
+          "bodyBg": "rgb(17, 23, 34)",
+          "bodyColor": "rgb(220, 227, 237)",
+          "rootBg": "rgb(17, 23, 34)",
+          "dark": "on",
+          "palette": "night",
+          "reader": null
+        },
+        "changedOutsideMasks": 0,
+        "publishedPixelDifference": 0,
+        "sha256": "1206a4faeace12daff8228953f248d1a34dc617bfe5940d4e04ec2689c573f02"
+      },
+      "externalRequestsBlocked": 1,
+      "file": "03-toc-off.png"
+    }
+  ],
+  "timezone": "Asia/Tokyo",
+  "visualQa": "All three disabled captures visually inspected at 1280x800; title/author/synopsis/episode-title masks cover the same work text as existing dark captures; controls, ranks, episode numbers and dates remain legible."
+}

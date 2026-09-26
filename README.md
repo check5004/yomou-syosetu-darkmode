@@ -23,7 +23,29 @@
 - **すぐ反映**：設定変更は開いている対応ページに反映。設定は端末内に保存。
 - **軽量な構成**：追加API権限は設定保存用の `storage` のみ。外部通信やアクセス解析はありません。
 
-<img src="docs/screenshots/popup.png" width="360" alt="表示モード、夜の色、本文の文字サイズと行間を設定する画面">
+## ビフォー／アフター
+
+左が拡張機能をオフにしたサイト本来の表示、右が「夜」の配色を有効にした表示です。同じページ・同じ位置で比較しています。画像をクリックすると原寸で確認できます。
+
+### 検索
+
+| 無効（サイト本来の表示） | 有効（夜） |
+| --- | --- |
+| [![無効状態の検索画面](assets/store/screenshots/01-search-off.png)](assets/store/screenshots/01-search-off.png) | [![有効状態の検索画面](assets/store/screenshots/01-search.png)](assets/store/screenshots/01-search.png) |
+
+### ランキング
+
+| 無効（サイト本来の表示） | 有効（夜） |
+| --- | --- |
+| [![無効状態のランキング画面](assets/store/screenshots/02-ranking-off.png)](assets/store/screenshots/02-ranking-off.png) | [![有効状態のランキング画面](assets/store/screenshots/02-ranking.png)](assets/store/screenshots/02-ranking.png) |
+
+### 小説目次
+
+| 無効（サイト本来の表示） | 有効（夜） |
+| --- | --- |
+| [![無効状態の小説目次画面](assets/store/screenshots/03-toc-off.png)](assets/store/screenshots/03-toc-off.png) | [![有効状態の小説目次画面](assets/store/screenshots/03-toc.png)](assets/store/screenshots/03-toc.png) |
+
+実サイトの保存済みページから撮影し、作品名・作者名・あらすじなどの文字だけを両側で同じようにぼかしています。撮影時は広告を省略しています。ぼかしや広告非表示は本拡張機能の機能ではありません。[画像の作成方法](docs/STORE_ASSET_VALIDATION.md)
 
 ## インストール
 
@@ -62,6 +84,8 @@ ZIP版には自動更新機能がありません。新しいバージョンはRe
 対応サイトのトップページや作品情報にも共通の配色を適用します。作者マイページ、ログイン画面、感想サイトは対象外です。
 
 ## 設定
+
+<img src="docs/screenshots/popup.png" width="360" alt="表示モード、夜の色、本文の文字サイズと行間を設定する画面">
 
 | 項目 | 動作 |
 | --- | --- |
