@@ -107,7 +107,6 @@
       "changedOutsideMasks": 0,
       "sourceTextModified": false,
       "offFile": "search-off-blurred.png",
-      "sha256": "a05527259ed6f0ecc7074b3cb0d01df3b745dc020c8e9a3d1c616bd88d4d307c",
       "darkReproduction": {
         "state": {
           "scrollY": 0,
@@ -120,10 +119,11 @@
         },
         "changedOutsideMasks": 0,
         "publishedPixelDifference": 0,
-        "sha256": "a1c34061f8036b18b0b8fdc129e67366783f6b5c212ad621a3d3a00797358767"
+        "sha256BeforeBrandCover": "a1c34061f8036b18b0b8fdc129e67366783f6b5c212ad621a3d3a00797358767"
       },
       "externalRequestsBlocked": 0,
-      "file": "01-search-off.png"
+      "file": "01-search-off.png",
+      "sha256BeforeBrandCover": "a05527259ed6f0ecc7074b3cb0d01df3b745dc020c8e9a3d1c616bd88d4d307c"
     },
     {
       "name": "ranking",
@@ -495,7 +495,6 @@
       "changedOutsideMasks": 0,
       "sourceTextModified": false,
       "offFile": "ranking-off-blurred.png",
-      "sha256": "65404b3e713b862844b931ab326cc719a8796a1242d346b097ce4c0472cc7009",
       "darkReproduction": {
         "state": {
           "scrollY": 0,
@@ -508,10 +507,11 @@
         },
         "changedOutsideMasks": 0,
         "publishedPixelDifference": 0,
-        "sha256": "21af576f2ea2d196d3411ee8f2dbb10baa890239cae6d6e64be243350e454c35"
+        "sha256BeforeBrandCover": "21af576f2ea2d196d3411ee8f2dbb10baa890239cae6d6e64be243350e454c35"
       },
       "externalRequestsBlocked": 0,
-      "file": "02-ranking-off.png"
+      "file": "02-ranking-off.png",
+      "sha256BeforeBrandCover": "65404b3e713b862844b931ab326cc719a8796a1242d346b097ce4c0472cc7009"
     },
     {
       "name": "toc",
@@ -666,7 +666,6 @@
       "changedOutsideMasks": 0,
       "sourceTextModified": false,
       "offFile": "toc-off-blurred.png",
-      "sha256": "6a87c7f3bb6528d4cc30bfc39962dac15503c9e1f7cceccf5f09a0b0ae35a000",
       "darkReproduction": {
         "state": {
           "scrollY": 1038,
@@ -679,12 +678,16 @@
         },
         "changedOutsideMasks": 0,
         "publishedPixelDifference": 0,
-        "sha256": "1206a4faeace12daff8228953f248d1a34dc617bfe5940d4e04ec2689c573f02"
+        "sha256BeforeBrandCover": "1206a4faeace12daff8228953f248d1a34dc617bfe5940d4e04ec2689c573f02"
       },
       "externalRequestsBlocked": 1,
-      "file": "03-toc-off.png"
+      "file": "03-toc-off.png",
+      "sha256BeforeBrandCover": "6a87c7f3bb6528d4cc30bfc39962dac15503c9e1f7cceccf5f09a0b0ae35a000"
     }
   ],
   "timezone": "Asia/Tokyo",
-  "visualQa": "All three disabled captures visually inspected at 1280x800; title/author/synopsis/episode-title masks cover the same work text as existing dark captures; controls, ranks, episode numbers and dates remain legible."
+  "visualQa": "All three disabled captures visually inspected at 1280x800; title/author/synopsis/episode-title masks cover the same work text as existing dark captures; controls, ranks, episode numbers and dates remain legible.",
+  "stage": "work-text-blur-before-opaque-brand-cover",
+  "note": "Historical intermediate-stage measurements. The final PNGs also include opaque brand covers; final hashes and mask checks are in branding-verification.json. Intermediate unredacted-brand PNGs are not distributed.",
+  "finalVerification": "branding-verification.json"
 }

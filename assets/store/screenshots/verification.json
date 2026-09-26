@@ -94,7 +94,7 @@
       "changedOutsideMasks": 0,
       "sourceTextModified": false,
       "method": "Browser-rendered transparent fixed-position backdrop-filter overlays over text rectangles only; original DOM text and layout retained.",
-      "sha256": "a1c34061f8036b18b0b8fdc129e67366783f6b5c212ad621a3d3a00797358767"
+      "sha256BeforeBrandCover": "a1c34061f8036b18b0b8fdc129e67366783f6b5c212ad621a3d3a00797358767"
     },
     {
       "file": "02-ranking.png",
@@ -452,7 +452,7 @@
       "changedOutsideMasks": 0,
       "sourceTextModified": false,
       "method": "Browser-rendered transparent fixed-position backdrop-filter overlays over text rectangles only; original DOM text and layout retained.",
-      "sha256": "21af576f2ea2d196d3411ee8f2dbb10baa890239cae6d6e64be243350e454c35"
+      "sha256BeforeBrandCover": "21af576f2ea2d196d3411ee8f2dbb10baa890239cae6d6e64be243350e454c35"
     },
     {
       "file": "03-toc.png",
@@ -593,7 +593,10 @@
       "changedOutsideMasks": 0,
       "sourceTextModified": false,
       "method": "Browser-rendered transparent fixed-position backdrop-filter overlays over text rectangles only; original DOM text and layout retained.",
-      "sha256": "1206a4faeace12daff8228953f248d1a34dc617bfe5940d4e04ec2689c573f02"
+      "sha256BeforeBrandCover": "1206a4faeace12daff8228953f248d1a34dc617bfe5940d4e04ec2689c573f02"
     }
-  ]
+  ],
+  "stage": "work-text-blur-before-opaque-brand-cover",
+  "note": "Historical intermediate-stage measurements. The final PNGs also include opaque brand covers; final hashes and mask checks are in branding-verification.json. Intermediate unredacted-brand PNGs are not distributed.",
+  "finalVerification": "branding-verification.json"
 }
